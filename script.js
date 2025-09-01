@@ -184,40 +184,34 @@ const projectData = {
     title: "Codeventia",
     description: `
             <h3>Codeventia</h3>
-            <p>A simple event management system using python flask and mysql. You can include:</p>
+            <p>A simple event management system using python flask and mysql. </p>
             <ul>
                 <li>Technologies used: Python, Flask, MySQL</li>
                 <li>Key features implemented: Event Creation and Management as well as a Coupon Allocation Feature.</li>
             </ul>
-            // <p>You can customize this content by editing the projectData object in script.js.</p>
         `,
   },
   project2: {
-    title: "Project Title 2",
+    title: "Pettio",
     description: `
-            <h3>Project Title 2</h3>
-            <p>This is where you would describe your second project in detail. You can include:</p>
+            <h3>Pettio</h3>
+            <p>A Pet Adoption Application built using React Native.</p>
             <ul>
-                <li>Technologies used</li>
-                <li>Key features implemented</li>
-                <li>Challenges overcome</li>
-                <li>Results achieved</li>
+                <li>Technologies used: React Native, Node js and MySQL</li>
+                <li>Key features implemented: Adoption System and QR Scanning for finding pets</li>
             </ul>
-            <p>You can customize this content by editing the projectData object in script.js.</p>
         `,
   },
   project3: {
-    title: "Project Title 3",
+    title: "KennectPlay",
     description: `
-            <h3>Project Title 3</h3>
-            <p>This is where you would describe your third project in detail. You can include:</p>
+            <h3>KennectPlay</h3>
+            <p>Platform for viewing, posting and sharing contents about your
+                favorite online/offline games.</p>
             <ul>
-                <li>Technologies used</li>
-                <li>Key features implemented</li>
-                <li>Challenges overcome</li>
-                <li>Results achieved</li>
+                <li>Technologies used: PHP and MySQL</li>
+                <li>Key features implemented: Liking, Commenting, Sharing and Posting of Contents.</li>
             </ul>
-            <p>You can customize this content by editing the projectData object in script.js.</p>
         `,
   },
 };
