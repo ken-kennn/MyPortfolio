@@ -181,17 +181,15 @@ function downloadCV() {
 // Project modal functionality
 const projectData = {
   project1: {
-    title: "Project Title 1",
+    title: "Codeventia",
     description: `
-            <h3>Project Title 1</h3>
-            <p>This is where you would describe your first project in detail. You can include:</p>
+            <h3>Codeventia</h3>
+            <p>A simple event management system using python flask and mysql. You can include:</p>
             <ul>
-                <li>Technologies used</li>
-                <li>Key features implemented</li>
-                <li>Challenges overcome</li>
-                <li>Results achieved</li>
+                <li>Technologies used: Python, Flask, MySQL</li>
+                <li>Key features implemented: Event Creation and Management as well as a Coupon Allocation Feature.</li>
             </ul>
-            <p>You can customize this content by editing the projectData object in script.js.</p>
+            // <p>You can customize this content by editing the projectData object in script.js.</p>
         `,
   },
   project2: {
