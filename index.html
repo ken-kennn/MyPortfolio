@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Professional Web Developer</title>
+    <meta
+      name="description"
+      content="Professional portfolio showcasing web development skills, projects, certifications, and experience"
+    />
+    <meta name="author" content="Your Name" />
+
+    <meta
+      property="og:title"
+      content="Portfolio - Professional Web Developer"
+    />
+    <meta
+      property="og:description"
+      content="Professional portfolio showcasing web development skills, projects, certifications, and experience"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="hero-image.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@yourusername" />
+    <meta name="twitter:image" content="hero-image.jpg" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a href="#hero" class="logo-link">KS Portfolio</a>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#hero" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#certificates" class="nav-link">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact Me</a>
+            </li>
+          </ul>
+
+          <!-- Mobile Menu Button -->
+          <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation Overlay -->
+      <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <div class="mobile-nav-content">
+          <a href="#hero" class="mobile-nav-link" onclick="closeMobileMenu()"
+            >Home</a
+          >
+          <a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="mobile-nav-link"
+            onclick="closeMobileMenu()"
+            >Projects</a
+          >
+          <a
+            href="#certificates"
+            class="mobile-nav-link"
+            onclick="closeMobileMenu()"
+            >Certifications</a
+          >
+          <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-image">
+            <img
+              src="public/images/kenneth.jpg"
+              alt="Profile Photo"
+              class="profile-img"
+            />
+          </div>
+          <div class="hero-text">
+            <h1 class="hero-name">Kenneth Sombillo</h1>
+            <p class="hero-description">
+              I am a web developer specializing in HTML, CSS, and JavaScript.
+            </p>
+            <div class="animated-position">
+              <span class="position-text">I am an aspiring </span>
+              <span class="animated-text" id="animatedText"></span>
+            </div>
+            <div class="hero-actions">
+              <button class="btn-primary" onclick="downloadCV()">
+                <i class="fas fa-download"></i>
+                Download CV
+              </button>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-container">
+            <h3 class="skill-title">Technical Skills</h3>
+            <div class="skill-items">
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">React Native</span>
+              <span class="skill-item">PHP</span>
+              <span class="skill-item">Python</span>
+              <span class="skill-item">HTML/CSS</span>
+              <span class="skill-item">MySQL</span>
+            </div>
+          </div>
+          <div class="skill-container">
+            <h3 class="skill-title">Other Skills</h3>
+            <div class="skill-items">
+              <span class="skill-item">Project Management</span>
+              <span class="skill-item">Team Leadership</span>
+              <span class="skill-item">Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card" onclick="openModal('project1')">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/400x250/f8f9fa/6c757d?text=Project+1"
+                alt="Project 1"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">CODEVENTIA</h3>
+              <p class="project-summary">
+                Brief description of your amazing project.
+              </p>
+              <button
+                class="btn-github"
+                onclick="event.stopPropagation(); window.open('#', '_blank')"
+              >
+                <i class="fab fa-github"></i>
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="openModal('project2')">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/400x250/f8f9fa/6c757d?text=Project+2"
+                alt="Project 2"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">PETTIO</h3>
+              <p class="project-summary">
+                Brief description of your amazing project.
+              </p>
+              <button
+                class="btn-github"
+                onclick="event.stopPropagation(); window.open('#', '_blank')"
+              >
+                <i class="fab fa-github"></i>
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="openModal('project3')">
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/400x250/f8f9fa/6c757d?text=Project+3"
+                alt="Project 3"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">KENNECTPLAY</h3>
+              <p class="project-summary">
+                Brief description of your amazing project.
+              </p>
+              <button
+                class="btn-github"
+                onclick="event.stopPropagation(); window.open('#', '_blank')"
+              >
+                <i class="fab fa-github"></i>
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+      <div class="container">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certificates-grid">
+          <div class="certificate-card">
+            <div class="certificate-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3 class="certificate-title">Certificate Name</h3>
+            <p class="certificate-issuer">Issuing Organization</p>
+            <p class="certificate-date">2024</p>
+          </div>
+
+          <div class="certificate-card">
+            <div class="certificate-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3 class="certificate-title">Certificate Name</h3>
+            <p class="certificate-issuer">Issuing Organization</p>
+            <p class="certificate-date">2023</p>
+          </div>
+
+          <div class="certificate-card">
+            <div class="certificate-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3 class="certificate-title">Certificate Name</h3>
+            <p class="certificate-issuer">Issuing Organization</p>
+            <p class="certificate-date">2023</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+          <p class="contact-description">
+            Let's connect and discuss opportunities to work together.
+          </p>
+          <a
+            href="mailto:your.email@example.com"
+            class="btn-primary contact-btn"
+          >
+            <i class="fas fa-envelope"></i>
+            Get In Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <div class="modal-body" id="modalBody">
+          <!-- Modal content will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
